@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tictactoegame">
+  <ClassDiagramComponents>
+    <Interface name="Celebrar" package="tictactoegame" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Methods>
+        <Method name="celebrar" returnType="String" visibility="package" isAbstract="true"/>
+      </Methods>
+    </Interface>
+    <Class name="GameManager" package="tictactoegame" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="instancia" type="GameManager" visibility="private" isStatic="true"/>
+        <Field name="gameState" type="String" visibility="public"/>
+        <Field name="jugadores" type="ArrayList&lt;Player&gt;" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getInstance" returnType="GameManager" visibility="public" isStatic="true"/>
+        <Method name="iniciar1" returnType="void" visibility="public"/>
+        <Method name="iniciar2" returnType="void" visibility="public"/>
+        <Method name="AddPlayersNames" returnType="void" visibility="public">
+          <Argument type="String" name="name1"/>
+          <Argument type="String" name="name2"/>
+        </Method>
+        <Method name="ArePlayerSet" returnType="boolean" visibility="public"/>
+        <Method name="AddPlayersSymbol" returnType="void" visibility="public"/>
+        <Method name="Start2v2" returnType="void" visibility="package"/>
+        <Method name="Start2v22" returnType="void" visibility="package"/>
+        <Method name="Win" returnType="void" visibility="package">
+          <Argument type="Player" name="player1"/>
+        </Method>
+        <Method name="Win" returnType="void" visibility="package">
+          <Argument type="Player" name="player1"/>
+          <Argument type="Player" name="player2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HumanPlayer" package="tictactoegame" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="celebrar" returnType="String" visibility="public"/>
+        <Method name="burla" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="IAPlayer" package="tictactoegame" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="celebrar" returnType="String" visibility="public"/>
+        <Method name="burla" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MainBoard" package="tictactoegame" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="gameManager" type="GameManager" visibility="package"/>
+        <Field name="turno" type="String" visibility="package"/>
+        <Field name="labels" type="JLabel" visibility="package"/>
+        <Field name="victorias" type="int" visibility="package"/>
+        <Field name="movimientos" type="int" visibility="package"/>
+        <Field name="player1" type="Player" visibility="package"/>
+        <Field name="player2" type="Player" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jLabel2MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel3MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel4MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel5MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel6MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel7MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel8MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel9MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jLabel10MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="burlabot" returnType="void" visibility="public"/>
+        <Method name="JugarRobot" returnType="void" visibility="private"/>
+        <Method name="casillaRobot" returnType="int" visibility="package"/>
+        <Method name="Presionar" returnType="void" visibility="public">
+          <Argument type="int" name="casilla"/>
+        </Method>
+        <Method name="ComprobarGanador" returnType="void" visibility="public">
+          <Argument type="Player" name="player"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainMenu" package="tictactoegame" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="gameManager" type="GameManager" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="GetPlayer1Name" returnType="String" visibility="public"/>
+        <Method name="GetPlayer2Name" returnType="String" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1FocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField2FocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainMenuIA" package="tictactoegame" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="gameManager" type="GameManager" visibility="package"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jTextField2FocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PantallaPrincipal" package="tictactoegame" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="gameManager" type="GameManager" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Player" package="tictactoegame" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="name" type="String" visibility="public"/>
+        <Field name="symbol" type="String" visibility="public"/>
+        <Field name="isMyTurn" type="boolean" visibility="public"/>
+        <Field name="wins" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="GetName" returnType="String" visibility="public"/>
+        <Method name="GetWins" returnType="int" visibility="public"/>
+        <Method name="CambiarTurno" returnType="void" visibility="public"/>
+        <Method name="AumentarVictorias" returnType="void" visibility="public">
+          <Argument type="Player" name="player"/>
+        </Method>
+        <Method name="burla" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RobotException" package="tictactoegame" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="TictactoeGame" package="tictactoegame" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="instancia" source="tictactoegame.GameManager" target="tictactoegame.GameManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jugadores" source="tictactoegame.GameManager" target="tictactoegame.Player" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Player&gt;"/>
+    <HasRelation name="player2" source="tictactoegame.MainBoard" target="tictactoegame.Player" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="tictactoegame.Player" target="tictactoegame.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="player1" source="tictactoegame.MainBoard" target="tictactoegame.Player" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="gameManager" source="tictactoegame.PantallaPrincipal" target="tictactoegame.GameManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="tictactoegame.HumanPlayer" target="tictactoegame.Player"/>
+    <UseRelation source="tictactoegame.MainBoard" target="tictactoegame.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="tictactoegame.GameManager" target="tictactoegame.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="tictactoegame.IAPlayer" target="tictactoegame.Player"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="tictactoegame.IAPlayer" target="tictactoegame.Celebrar"/>
+    <HasRelation name="gameManager" source="tictactoegame.MainMenuIA" target="tictactoegame.GameManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="tictactoegame.HumanPlayer" target="tictactoegame.Celebrar"/>
+    <UseRelation source="tictactoegame.GameManager" target="tictactoegame.GameManager" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="gameManager" source="tictactoegame.MainBoard" target="tictactoegame.GameManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="gameManager" source="tictactoegame.MainMenu" target="tictactoegame.GameManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
